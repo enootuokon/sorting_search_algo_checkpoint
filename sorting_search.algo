@@ -1,0 +1,21 @@
+ALGORITHM insertionSort(arr) 
+VAR
+    //arr : array to be sorted 
+BEGIN
+    // traverse through each element in arr starting from index 1
+    FOR i FROM 1 TO length() -1 DO
+        // pick element arr[i] to be inserted
+        currentElement = arr[i]
+        //Begin from the element befor the current element to the right hand side
+        j=i-1
+
+        // Shift element greater than the current element to the right 
+        WHILE (j >= 0 and arr[j] > currentElement) DO
+            arr[j + 1] = arr[j]
+            j = j - 1
+        END_WHILE
+
+        // Insert the current element into its correct position within the sorted sequence.
+        arr[j + 1] = currentElement.
+    END_FOR
+END
